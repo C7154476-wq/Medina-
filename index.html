@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Моей Медине ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;display:flex;align-items:center;
+  justify-content:center;padding:22px;
+  background:linear-gradient(145deg,#170f19,#3a1827,#100e16);
+  color:#fff0e8;font-family:Georgia,serif;text-align:center
+}
+.card{
+  width:100%;max-width:440px;padding:30px 23px;
+  border:1px solid #b77b86;border-radius:22px;
+  background:#211720;box-shadow:0 0 40px #0008
+}
+.heart{font-size:38px;animation:pulse 1.5s infinite}
+h1{font-size:30px;color:#ffd6dc;font-weight:normal}
+p{font-size:18px;line-height:1.8}
+button{
+  border:0;border-radius:30px;padding:14px 22px;
+  background:#b94f70;color:white;font-size:17px;margin-top:15px
+}
+#letter{display:none;text-align:left;margin-top:24px}
+.sign{text-align:right;color:#ffd6dc}
+@keyframes pulse{50%{transform:scale(1.15)}}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="heart">❤️</div>
+  <h1>Моей любимой Медине</h1>
+  <p>Для тебя у меня есть кое-что особенное…</p>
+  <button onclick="openLetter()">Открыть моё письмо 💌</button>
+  <div id="letter">
+    <p>Моя дорогая Медина ❤️</p>
+    <p>Я хотел оставить тебе нечто большее, чем просто сообщение. Что-то, к чему ты сможешь вернуться и перечитать в любой момент.</p>
+    <p>Даже если нас разделяют километры, ты остаёшься человеком, о котором я думаю с теплом. Мне дороги наши разговоры, наши моменты и всё то хорошее, что связывает нас.</p>
+    <p>Я не обещаю, что каждый день будет идеальным. Но я хочу, чтобы ты знала: ты для меня особенная. Мне хочется видеть твою улыбку, поддерживать тебя и вместе создавать воспоминания, которые останутся с нами надолго.</p>
+    <p>Если однажды тебе захочется вспомнить о моей любви, просто открой это письмо. Пусть оно напомнит тебе, как много ты для меня значишь.</p>
+    <p>Спасибо, что ты есть в моей жизни. ❤️</p>
+    <p class="sign">С любовью,<br>твой Чынгыз ❤️</p>
+  </div>
+</div>
+<script>
+function openLetter(){
+ document.getElementById('letter').style.display='block';
+ document.querySelector('button').style.display='none';
+}
+</script>
+</body>
+</html>
